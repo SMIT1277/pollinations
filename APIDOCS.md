@@ -61,10 +61,10 @@ Generates an image based on a text description.
 | `prompt`   | Yes      | Text description of the image. Should be URL-encoded.                              |         |
 | `model`    | No       | Model for generation. See [Available Image Models](#list-available-image-models-). | `flux`  |
 | `seed`     | No       | Seed for reproducible results.                                                     |         |
-| `width`    | No       | Width of the generated image.                                                      | 1024    |
-| `height`   | No       | Height of the generated image.                                                     | 1024    |
-| `nologo`   | No       | Set to `true` to disable the Pollinations logo overlay.                            | `false` |
-| `private`  | No       | Set to `true` to prevent the image from appearing in the public feed.              | `false` |
+| `width`    | yes       | Width of the generated image.                                                      | 1080    |
+| `height`   | yes      | Height of the generated image.                                                     | 1920   |
+| `nologo`   | No       | Set to `true` to disable the Pollinations logo overlay.                            | `true` |
+| `private`  | No       | Set to `true` to prevent the image from appearing in the public feed.              | `true` |
 | `enhance`  | No       | Set to `true` to enhance the prompt using an LLM for more detail.                  | `false` |
 | `safe`     | No       | Set to `true` for strict NSFW filtering (throws error if detected).                | `false` |
 | `referrer` | No\*     | Referrer URL/Identifier. See [Referrer Section](#referrer-).                       |         |
